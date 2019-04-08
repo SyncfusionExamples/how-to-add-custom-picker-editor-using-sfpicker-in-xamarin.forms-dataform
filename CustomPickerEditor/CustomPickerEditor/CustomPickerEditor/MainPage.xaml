@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomPickerEditor"
+             x:Class="CustomPickerEditor.MainPage"
+             xmlns:picker="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms"
+             xmlns:dataForm ="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms">
+
+    <ContentPage.Behaviors>
+        <local:DataFormBehavior/>
+    </ContentPage.Behaviors>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="0.9*"/>
+        </Grid.RowDefinitions>
+
+        <dataForm:SfDataForm Grid.Row="1" x:Name="dataForm"/>
+
+        <picker:SfPicker x:Name="picker" 
+                         BackgroundColor="Silver" 
+                         ShowHeader="false"
+                         ShowFooter="true" 
+                         PickerMode="Dialog" 
+                         PickerWidth="250" 
+                         PickerHeight="300" 
+                         ItemsSource="{Binding Colors}" >
+            <picker:SfPicker.FooterView>
+                <Button x:Name="footerView" Text="Close"/>
+            </picker:SfPicker.FooterView>
+        </picker:SfPicker>
+    </Grid>
+
+</ContentPage>
