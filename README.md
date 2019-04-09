@@ -2,7 +2,7 @@
 
 This example demonstrates how to add custom picker editor using SfPicker in Xamarin.Forms DataForm.
 
-See [How to add custom picker editor using SfPicker in Xamarin.Forms DataForm]() for more details.
+See [How to add custom picker editor using SfPicker in Xamarin.Forms DataForm](https://www.syncfusion.com/kb/10347/how-to-add-custom-picker-editor-using-sfpicker-in-xamarin-forms-dataform) for more details.
 
 ## <a name="requirements-to-run-the-demo"></a>Requirements to run the demo ##
 
